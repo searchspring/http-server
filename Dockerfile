@@ -1,9 +1,9 @@
 FROM node:alpine3.16
 
-ARG VCS_REF
-ARG BUILD_DATE
-
-RUN npm i http-server -g
+ARG VCS_REF \
+    BUILD_DATE
+COPY package*.json .
+RUN npm install 
 WORKDIR /public
 COPY ./test.html .
 
