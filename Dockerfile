@@ -1,7 +1,7 @@
 FROM node:alpine3.16
 ARG VCS_REF \
     BUILD_DATE
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install 
 
