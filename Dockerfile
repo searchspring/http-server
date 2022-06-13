@@ -1,14 +1,11 @@
-FROM mhart/alpine-node:latest
-LABEL maintainer="Dan Jellesma"
+FROM node:alpine3.16
+ARG VCS_REF \
+    BUILD_DATE
+COPY package*.json .
 
-ARG VCS_REF
-ARG BUILD_DATE
+RUN npm install 
 
-RUN npm i http-server -g
-
-RUN mkdir /public
 WORKDIR /public
 COPY ./test.html .
-
 EXPOSE 8080
 CMD ["http-server"]

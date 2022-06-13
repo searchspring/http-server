@@ -1,0 +1,18 @@
+{
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "Run a tiny http-server on your machine with no dependencies like NodeJS, NPM, Nginx, etc",
+  "dependencies": {
+    "http-server": "14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/searchspring/http-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/searchspring/http-server/issues"
+  },
+  "homepage": "https://github.com/searchspring/http-server#readme"
+}
